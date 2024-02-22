@@ -4,34 +4,21 @@
 
 <?php get_header(); ?>
 
-<div id="promozioni" class="container">
+<div class="container promozione">
+    <h1 class="nellepuntateprecedenti">
+        Promozioni disponibili
+    </h1>
 
     <?php
 
-    $promozioni_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 1, 'name' => 'promozioni'));
+    $consigli_page = get_page_by_path('promozioni-in-loco');
 
-    if ($promozioni_query->have_posts()):
-        while ($promozioni_query->have_posts()):
-            $promozioni_query->the_post();
-            ?>
-            <div class="promozione">
-                <h1>
-                    Promozioni disponibili
-                </h1>
-                <div class="descrizione">
-                    <div class="contenuto-promozione">
-                        <?php the_content(); ?>
-                    </div>
-                </div>
-            </div>
+    if ($consigli_page) {
 
-            <?php
-        endwhile;
-        wp_reset_postdata();
-    else:
-        echo '<p>Nessuna promozione disponibile al momento.</p>';
-    endif;
+        echo apply_filters('the_content', $consigli_page->post_content);
+    }
     ?>
+
 </div>
 
 <?php get_footer(); ?>

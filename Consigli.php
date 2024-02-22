@@ -4,33 +4,21 @@
 
 <?php get_header(); ?>
 
-<div id="promozioni" class="container">
+<div class="container">
+    <h1 class="nellepuntateprecedenti">
+        Consigli per godersi la vacanza
+    </h1>
 
     <?php
-    $promozioni_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 1, 'name' => 'consigli-utili'));
 
-    if ($promozioni_query->have_posts()):
-        while ($promozioni_query->have_posts()):
-            $promozioni_query->the_post();
-            ?>
-            <div class="luoghidaesplorare">
-                <h1>
-                    Consigli utili
-                </h1>
-                <div class="descrizione">
-                    <div class="contenuto-luoghidaesplorare">
-                        <?php the_content(); ?>
-                    </div>
-                </div>
-            </div>
+    $consigli_page = get_page_by_path('consigli-utili');
 
-            <?php
-        endwhile;
-        wp_reset_postdata();
-    else:
-        echo '<p>Nessuna promozione disponibile al momento.</p>';
-    endif;
+    if ($consigli_page) {
+
+        echo apply_filters('the_content', $consigli_page->post_content);
+    }
     ?>
+
 </div>
 
 <?php get_footer(); ?>
