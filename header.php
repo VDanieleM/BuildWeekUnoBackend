@@ -29,7 +29,7 @@
                         $page = get_page_by_title($page_title);
                         if ($page) {
                             $page_link = get_page_link($page->ID);
-                            $current_class = is_page($page->ID) ? 'current-menu-item' : ''; // Aggiungi la classe se la pagina è attiva
+                            $current_class = is_page($page->ID) ? 'current-menu-item' : '';
                             echo '<li class="nav-item ' . esc_attr($current_class) . '"><a class="nav-link" href="' . esc_url($page_link) . '">' . esc_html($page->post_title) . '</a></li>';
                         }
                     }

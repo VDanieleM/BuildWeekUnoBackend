@@ -11,8 +11,8 @@
 
     <?php
 
-    $consigli_page = get_page_by_path('luoghi-da-esplorare'); // Assumi che lo slug della pagina sia "consigli-utili"
-    
+    $consigli_page = get_page_by_path('luoghi-da-esplorare');
+
     if ($consigli_page) {
 
         echo apply_filters('the_content', $consigli_page->post_content);

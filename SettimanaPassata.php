@@ -1,10 +1,21 @@
 <?php
-/* Template Name: IlNostroTemplate */
+/* Template Name: Settimane Passate */
 ?>
 
 <?php get_header(); ?>
 
-<div class="container text-center">
+<div class="container">
+
+    <?php
+    if (have_posts()):
+        while (have_posts()):
+            the_post();
+
+            the_content();
+
+        endwhile;
+    endif;
+    ?>
 
 </div>
 
