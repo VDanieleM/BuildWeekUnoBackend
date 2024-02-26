@@ -29,8 +29,8 @@
                         $page = get_page_by_title($page_title);
                         if ($page) {
                             $page_link = get_page_link($page->ID);
-                            $current_class = is_page($page->ID) ? 'current-menu-item' : '';
-                            echo '<li class="nav-item ' . esc_attr($current_class) . '"><a class="nav-link" href="' . esc_url($page_link) . '">' . esc_html($page->post_title) . '</a></li>';
+                            $current_style = is_page($page->ID) ? 'font-weight: bold; color: red;' : ''; // Inline style for current page
+                            echo '<li class="nav-item" style="' . esc_attr($current_style) . '"><a class="nav-link" href="' . esc_url($page_link) . '">' . esc_html($page->post_title) . '</a></li>';
                         }
                     }
                     ?>
