@@ -246,14 +246,12 @@ function bd_customizer_hero_color($wp_customize) {
     );
 }
 
-
 add_action('wp_head', 'bd_customizehero_styles');
 
 function bd_customizehero_styles() {
-    $text_color = get_theme_mod('hero_color_setting', '#043F51'); // Retrieve the text color setting
+    $text_color = get_theme_mod('hero_color_setting', '#8f4343');
 
-    // Output the CSS inline in the <head> section
     echo '<style>';
-    echo '.home h1 { color: ' . $text_color . '; }'; // Apply the selected text color to .home h1
+    echo '.home h1 { color: ' . $text_color . ' !important; }';
     echo '</style>';
 }
