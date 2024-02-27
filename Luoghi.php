@@ -40,7 +40,7 @@
 
     <?php
 
-    $consigli_page = get_page_by_path('consigli-utili');
+    $consigli_page = get_page_by_path('luoghi-da-esplorare');
 
     if ($consigli_page) {
 
