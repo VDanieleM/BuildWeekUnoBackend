@@ -13,617 +13,676 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mytheme */
 
 body {
-    background: rgb(210,171,171);
-background: linear-gradient(180deg, rgba(210,171,171,1) 0%, rgba(255,255,255,0) 7%);
-}
-
-/*elementi eliminati*/
-
-.av-credit-link, .av-social-share {
-  display: none !important;
-}
-
-.navbar {
-  background-color: #17bebb50;
-  position: sticky !important;
-  top: 0;
-  z-index: 100 !important;
-  border-bottom: solid 0.1rem #37577e;
-}
-
-.navbar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #253d5c !important;
-  opacity: 0.7 !important;
-  /* backdrop-filter: blur(20px) !important; */
-  z-index: -1;
-}
-
-.navbar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://images.unsplash.com/photo-1559825477-6f38d6332bb6?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') top/cover no-repeat;
-  z-index: -2;
-} 
-
-
-.navbar-nav .nav-item {
-  list-style-type: none;
-}
-
-      .navbar-nav .container {
-          display: flex !important;
-          justify-content: space-between !important;
-      }
-          
-
-      .navbar-brand {
-          font-weight: bold;
-          color: white !important;
-      }
-
-      .nav-item .nav-link {
-          color: white !important;
-      }
-
-      .nav-item .nav-link:hover {
-          color: #D2ABAB !important;
-      }
-      
-
-
-footer {
-  background-color: #17bebb50;
-  position: sticky !important;
-  top: 0;
-  z-index: 100 !important;
-  padding-bottom: 10rem !important;
-  padding-top: 10rem !important;
-  margin-top: 6rem !important;
-}
-
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #253d5c !important;
-  opacity: 0.7 !important;
-  /* backdrop-filter: blur(20px) !important; */
-  z-index: -1;
-}
-
-footer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://images.unsplash.com/photo-1559825477-6f38d6332bb6?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') top/cover no-repeat;
-  z-index: -2;
-}
-
-footer p {
-  color:  white !important;
-}
-
-/* HOMEPAGE */
-
-.home h1 {
-  color: #8f4343 !important;
-  padding-bottom: 10px;
-  font-size: 4rem;
-  padding-top : 3rem !important;
-}
-
-.wp-block-spacer {
-  height: 3rem !important;
-}
-
-.hero-section .hero-content h4,
-.hero-section .hero-content h1,
-.contenitorePagina .hero-content h1,
-.contenitorePagina .hero-content h4 {
-  color: #0e1d30 !important;
-  padding-bottom: 10px;
-  opacity: 0.6;
-  margin-left: 8rem;
-  max-width: 55%;
-}
-
-.contenitorePagina .hero-content {
-  margin-left: 2rem;
-  margin-top: 20rem;
-}
-
-.home .wp-block-media-text {
-  position: relative;
-  padding: 2rem;
-  border-radius: 2rem;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.home .wp-block-media-text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #253d5c77;
-  backdrop-filter: blur(5px);
-  z-index: -1;
-}
-
-.home .wp-block-media-text::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://images.unsplash.com/photo-1559825477-6f38d6332bb6?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
-  z-index: -2;
-}
-
-.home .wp-block-media-text figure {
-  border-radius: 2rem;
-  border : 0.1rem solid white;
-}
-
-.home .wp-block-media-text .wp-block-media-text__content .wp-block-heading, .home .wp-block-media-text .wp-block-media-text__content p {
-  color: white !important;
-}
-
-.home .wp-block-media-text .wp-block-media-text__content .wp-block-button .wp-block-button__link {
-  background-color: #0e1d3070;
-  opacity: 100%;
-  border-radius: 3rem;
-  backdrop-filter: blur(5px);
-  border: none;
-  padding: 1rem 4rem !important;
-  color: white;
-}
-
-.home .wp-block-media-text .wp-block-media-text__content .wp-block-button .wp-block-button__link:hover {
-  background-color: #ffd1d160 !important;
-  background-image: none !important;
-}
-
-.hero-section .hero-content .btn, .container .hero-content .btn {
-  background-color: #0e1d3070;
-  margin-left: 8rem;
-  opacity: 100%;
-  border-radius: 3rem;
-  backdrop-filter: blur(5px);
-  border: none;
-  padding: 1rem 4rem !important;
-}
-
-.hero-section .hero-content .btn:hover, .container .hero-content .btn:hover {
-  background-color: #ffd1d160 !important;
-  background-image: none !important;
-}
-
-.nellepuntateprecedenti {
-  text-align: center;
-  margin-top: 6dvh;
-  color:  #201314;
-  text-transform: capitalize;
-}
-
-.hero-section {
-  position: relative;
-}
-
-.hero-bg {
-  position: relative;
-  height: 700px;
-  background-size: cover;
-  background-position: top;
-  background-color: rgba(0, 0, 0);
-  opacity: 1;
-  box-shadow: inset 0px 50px 100px -50px #000000,
-              inset 0px -50px 100px -50px #000000;
-  transition: background-position 0.3s ease-in-out;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-
-
-.hero-content h1,
-.hero-content h4 {
-  margin: 0;
-}
-
-
-.hero-content {
-  position: absolute;
-  top: 10%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  color: black;
-  text-align: left;
-}
-
-.hero-content h1 {
-      font-size: 11dvh;
-          opacity: 80%;
-}
-
-.hero-content h4 {
-  opacity: 70%;
-      color: black;
-}
-
-
-.wpforms-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/*CONSIGLI*/
-
-.contenuto_consigli {
-  min-height: 75vh !important;
-  width: 80% !important;
-  margin: auto !important;
-  text-align: center !important;
-}
-
-.contenuto_consigli p {
-  margin-bottom: 3rem;
-  color: #1F3F67 !important;
-}
-
-.contenuto_consigli p strong {
-  color: #8F4343 !important;
-}
-
-/* PROMOZIONI */
-
-#promozioni {
-  padding: 20px;
-}
-
-.descrizione {
-  padding: 20px;
-}
-
-.contenuto-promozione {
-  margin-bottom: 20px;
-}
-
-.promozione img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px ;
-  display: block;
-}
-
-.promozione h1 {
-  text-align: center;
-  margin-top: 2dvh;
-}
-
-.nellepuntateprecedenti {
-  color: #8F4343 !important;
-}
-
-.promozione p {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-.wp-block-column .wp-block-group .wp-block-group p, .wp-block-column div p, .container p {
-  color: #0e1d30 !important;
-  text-align: justify !important;
-}
-
-.wp-block-column .wp-block-group .wp-block-group p:first-of-type, .wp-block-post .wp-block-columns .wp-block-column h2 {
-  color: #8F4343 !important;
-}
-
-.wp-block-columns {
-  width: 50% !important;
-  margin: auto !important;
-}
-
-.wp-image-428, .wp-image-431, .wp-image-429, .wp-image-430 {
-  border-radius: 2rem !important;
-  width: 100% !important;
-  height: auto !important;
-}
-
-/*.wp-block-column .wp-block-group .wp-block-group figure {
-  width: 500px !important;
-}*/
-
-
-/* LUOGHI DA ESPLORARE */
-
-.nellepuntateprecedenti {
-  margin-top: 4rem !important;
-  margin-bottom: 4rem !important;
-  font-size: 4rem;
-  color: #4F7885;
-}
-
-.luoghidaesplorare h1 {
-  text-align: center;
-  margin-top: 2dvh;
-  margin-bottom: 7dvh;
-}
-
-
-.video-responsive {
-  text-align: center;
-}
-
-.video-responsive iframe {
-width: 100%;
-height: 600px;
-}
-
-/* COSE DA FARE */
-
-.wp-block-post .wp-block-columns {
-  margin: 6rem auto !important;
-  width: 70% !important;
-  background-color: #d2abab55 !important;
-  padding: 2rem !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-content: center !important;
-  border-radius: 2rem !important;
-  box-shadow: #8F434355 0 5px 10px 0
-}
-
-.wp-block-post .wp-block-columns:hover {
-  cursor: pointer !important;
-}
-
-.wp-block-post .wp-block-columns .wp-block-column {
-  align-items: center !important;
-}
-
-.wp-block-post .wp-block-columns figure img {
-  border-radius: 2rem !important;
-}
-
-/* VISITA PARIGI */
-div .post .card {
-  /* margin-bottom: 20px; */
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-
+  background: rgb(236,236,236);
+  background: linear-gradient(138deg, rgba(236,236,236,1) 0%, rgba(207,207,207,1) 100%);
+  }
   
-}
-
-.post .card-body p {
-
-  z-index: 5;
-  padding: 2px;
-
-}
-.post .card-body .card-text{
-  margin: 0;
-}
-
-.card-text h1{
-  margin-top: 0.1em;
-  margin-bottom: 0;
-}
-.post .card-body figure img{
-  position: relative;
-  height: 100%;
-  -webkit-mask-image: linear-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0) ));
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-  border-radius: 10px;
-}
-
-/*FORMHOME*/
-
-.wpforms-confirmation-container-full {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  border: 1px solid #ccc !important;
-  padding: 20px !important;
-  border-radius: 0.5rem !important;
-}
-
-.wpforms-container {
-  padding: 2rem !important;
-  border-radius: 2rem !important;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1) !important;
-  position: relative !important;
-  overflow: hidden;
-  z-index: 1 !important;
-  background-color: transparent !important;
-  margin-bottom: 6rem !important;
-}
-
-.wpforms-container::before {
-  content: "";
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #bd8b8b;
-  opacity: 1 !important;
-  backdrop-filter: blur(20px) !important;
-  z-index: -2 !important;
-  border-radius: 2rem !important;
-}
-
-.wpforms-container::after {
-  content: "";
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent !important;
-  background-image: url('https://images.unsplash.com/photo-1504548840739-580b10ae7715?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
-  z-index: -1 !important;
-  border-radius: 2rem !important;
-  opacity: 0.1 !important;
+  /*elementi eliminati*/
   
-}
-
-
-.wpforms-field-container .wpforms-field-label, .wpforms-field-container label {
-  color: white !important;
-}
-
-.wpforms-field-medium {
-  border: none !important;
-  border-radius: 0.5rem !important;
-}
-
-.wpforms-submit {
-  background-color: #0e1d3070 !important;
-  border-radius: 3rem !important;
-  backdrop-filter: blur(5px) !important;
-  border: none !important;
-  color: white;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-}
-
-
-.wpforms-submit:hover {
-  background-color: #ffd1d160 !important;
-  background-image: none !important;
-}
-
-/* Stilizzazione generale dei commenti */
-.wp-block-comments {
-  margin-top: 1rem !important;
-  color: #1F3F67 !important;
-  background-color: #1F3F6730 !important;
-  padding: 2rem !important;
-  border-radius: 2rem;
-  border: solid 1px #1F3F67;
-}
-
-.wp-block-comments a {
-  text-decoration: none !important;
-  color: #904545 !important;
-}
-
-/* Stilizzazione delle card di Bootstrap per i commenti */
-.comment .wp-block-columns {
-  background-color: rgba(255, 255, 255, 0.75) !important;
-  margin-bottom: 0.5rem !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  width: 100% !important;
-  padding: 1rem !important;
-  border-radius: 2rem !important;
-}
-
-/* Stilizzazione del nome dell'autore del commento */
-.wp-block-comment-author-name {
-  font-weight: bold !important;
-}
-
-/* Stilizzazione del testo del commento */
-.wp-block-comment-content {
-  margin-top: 10px !important;
-}
-
-/* Stilizzazione della data del commento */
-.wp-block-comment-date {
-  color: #888 !important;
-  font-size: 0.9em !important;
-}
-
-/* Stilizzazione del form di risposta ai commenti */
-.wp-block-post-comments-form {
-  margin-top: 30px !important;
-}
-
-/* Stilizzazione del titolo "Leave a Reply" */
-.comment-reply-title {
-  font-size: 1.5em !important;
-  margin-bottom: 20px !important;
-}
-
-/* Stilizzazione del campo di commento nel form */
-.comment-form-comment {
-  margin-bottom: 20px !important;
-}
-
-.comment-form-comment label {
-  color: #0e1d30 !important;
-}
-
-/* Stilizzazione del pulsante "Post Comment" */
-.comment-form .submit {
-  background-color: #0e1d3070;
-  opacity: 100%;
-  border-radius: 3rem;
-  backdrop-filter: blur(5px);
-  border: none;
-  padding: 1rem 4rem !important;
-}
-
-.comment-form .submit:hover {
-  background-color: #ffd1d160 !important;
-  background-image: none !important;
-}
-
-.wp-block-comments-title {
-  display: none !important;
-}
-
-/*Articoli destinazioni*/
-.viaggiPassati {
-  width: 60% !important;
-  margin: auto !important;
-}
-
-.container .has-text-align-center {
-  text-align: center !important;
-  margin-top: 2rem !important;
-}
-
-p strong {
-  color: #8F4343 !important;
-}
-
-.viaggiPassati .wp-block-media-text .wp-block-media-text__media {
-  border-radius: 2rem !important;
-}
-
-/*Visita Parigi*/
-.post {
-  border: none !important;
-}
-
-.card-body {
-  width: 60% !important;
-  margin: auto !important;
-}
-
-.card-body h1 {
-  margin-bottom: 2rem !important;
-  padding: 1rem !important;
-  border-bottom: solid 1px #1F3F67 !important;
-}
+  .av-credit-link, .av-social-share {
+    display: none !important;
+  }
+  
+  .navbar {
+    background-color: #17bebb50;
+    position: sticky !important;
+    top: 0;
+    z-index: 100 !important;
+    border-bottom: solid 0.1rem #37577e;
+  }
+  
+  .navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #253d5c !important;
+    opacity: 0.7 !important;
+    /* backdrop-filter: blur(20px) !important; */
+    z-index: -1;
+  }
+  
+  .navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1559825477-6f38d6332bb6?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') top/cover no-repeat;
+    z-index: -2;
+  } 
+  
+  
+  .navbar-nav .nav-item {
+    list-style-type: none;
+  }
+  
+        .navbar-nav .container {
+            display: flex !important;
+            justify-content: space-between !important;
+        }
+            
+  
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+        }
+  
+        .nav-item .nav-link {
+            color: white !important;
+        }
+  
+        .nav-item .nav-link:hover {
+            color: #D2ABAB !important;
+        }
+        
+  
+  
+  footer {
+    background-color: #17bebb50;
+    position: sticky !important;
+    top: 0;
+    z-index: 100 !important;
+    padding-bottom: 10rem !important;
+    padding-top: 10rem !important;
+    margin-top: 6rem !important;
+  }
+  
+  footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #253d5c !important;
+    opacity: 0.7 !important;
+    /* backdrop-filter: blur(20px) !important; */
+    z-index: -1;
+  }
+  
+  footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1559825477-6f38d6332bb6?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') top/cover no-repeat;
+    z-index: -2;
+  }
+  
+  footer p {
+    color:  white !important;
+  }
+  
+  /* HOMEPAGE */
+  
+  .home .wp-block-group {
+    align-items: stretch !important;
+  }
+  
+  .home .wp-block-group .has-white-color {
+    color: white !important;
+      background-color: #bd8b8b85;
+      padding: 2rem !important;
+    border-radius: 2rem !important;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1) !important;
+    position: relative !important;
+    overflow: hidden;
+    height: 100% !important;
+  }
+  
+  .home .wp-block-group .wpforms-container {
+    margin: 0 !important;
+  }
+  
+  .home h1 {
+    color: #8f4343 !important;
+    padding-bottom: 10px;
+    font-size: 4rem;
+    padding-top : 3rem !important;
+  }
+  
+  .wp-block-spacer {
+    height: 3rem !important;
+  }
+  
+  .hero-section .hero-content h4,
+  .hero-section .hero-content h1,
+  .contenitorePagina .hero-content h1,
+  .contenitorePagina .hero-content h4 {
+    color: #0e1d30 !important;
+    padding-bottom: 10px;
+    opacity: 0.6;
+    margin-left: 8rem;
+    max-width: 55%;
+  }
+  
+  .contenitorePagina .hero-content {
+    margin-left: 2rem;
+    margin-top: 20rem;
+  }
+  
+  .home .wp-block-media-text {
+    position: relative;
+    padding: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .home .wp-block-media-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #253d5c77;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+  }
+  
+  .home .wp-block-media-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1559825477-6f38d6332bb6?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    z-index: -2;
+  }
+  
+  .home .wp-block-media-text figure {
+    border-radius: 2rem;
+    border : 0.1rem solid white;
+  }
+  
+  .home .wp-block-media-text .wp-block-media-text__content .wp-block-heading, .home .wp-block-media-text .wp-block-media-text__content p {
+    color: white !important;
+  }
+  
+  .home .wp-block-media-text .wp-block-media-text__content .wp-block-button .wp-block-button__link {
+    background-color: #0e1d3070;
+    opacity: 100%;
+    border-radius: 3rem;
+    backdrop-filter: blur(5px);
+    border: none;
+    padding: 1rem 4rem !important;
+    color: white;
+  }
+  
+  .home .wp-block-media-text .wp-block-media-text__content .wp-block-button .wp-block-button__link:hover {
+    background-color: #ffd1d160 !important;
+    background-image: none !important;
+  }
+  
+  .hero-section .hero-content .btn, .container .hero-content .btn {
+    background-color: #0e1d3070;
+    margin-left: 8rem;
+    opacity: 100%;
+    border-radius: 3rem;
+    backdrop-filter: blur(5px);
+    border: none;
+    padding: 1rem 4rem !important;
+  }
+  
+  .hero-section .hero-content .btn:hover, .container .hero-content .btn:hover {
+    background-color: #ffd1d160 !important;
+    background-image: none !important;
+  }
+  
+  .nellepuntateprecedenti {
+    text-align: center;
+    margin-top: 6dvh;
+    color:  #201314;
+    text-transform: capitalize;
+  }
+  
+  .hero-section {
+    position: relative;
+  }
+  
+  .hero-bg {
+    position: relative;
+    height: 700px;
+    background-size: cover;
+    background-position: top;
+    background-color: rgba(0, 0, 0);
+    opacity: 1;
+    box-shadow: inset 0px 50px 100px -50px #000000,
+                inset 0px -50px 100px -50px #000000;
+    transition: background-position 0.3s ease-in-out;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-content h1,
+  .hero-content h4 {
+    margin: 0;
+  }
+  
+  .hero-content h1 {
+        font-size: 11dvh;
+            opacity: 80%;
+  }
+  
+  .hero-content h4 {
+    opacity: 70%;
+        color: black;
+  }
+  
+  
+  .wpforms-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /*CONSIGLI*/
+  
+  .contenuto_consigli {
+    min-height: 75vh !important;
+    width: 80% !important;
+    margin: auto !important;
+    text-align: center !important;
+  }
+  
+  .contenuto_consigli p {
+    margin-bottom: 3rem;
+    color: #1F3F67 !important;
+  }
+  
+  .contenuto_consigli p strong {
+    color: #8F4343 !important;
+  }
+  
+  /* PROMOZIONI */
+  
+  #promozioni {
+    padding: 20px;
+  }
+  
+  .descrizione {
+    padding: 20px;
+  }
+  
+  .contenuto-promozione {
+    margin-bottom: 20px;
+  }
+  
+  .promozione img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px ;
+    display: block;
+  }
+  
+  .promozione h1 {
+    text-align: center;
+    margin-top: 2dvh;
+  }
+  
+  .nellepuntateprecedenti {
+    color: #8F4343 !important;
+  }
+  
+  .promozione p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .wp-block-column .wp-block-group .wp-block-group p, .wp-block-column div p, .container p {
+    text-align: justify !important;
+  }
+  
+  .wp-block-column .wp-block-group .wp-block-group p:first-of-type, .wp-block-post .wp-block-columns .wp-block-column h2 {
+    color: #8F4343 !important;
+  }
+  
+  .wp-block-columns {
+    width: 50% !important;
+    margin: auto !important;
+  }
+  
+  .wp-image-428, .wp-image-431, .wp-image-429, .wp-image-430 {
+    border-radius: 2rem !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /*.wp-block-column .wp-block-group .wp-block-group figure {
+    width: 500px !important;
+  }*/
+  
+  
+  /* LUOGHI DA ESPLORARE */
+  
+  .nellepuntateprecedenti {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+    font-size: 4rem;
+    color: #4F7885;
+  }
+  
+  .luoghidaesplorare h1 {
+    text-align: center;
+    margin-top: 2dvh;
+    margin-bottom: 7dvh;
+  }
+  
+  
+  .video-responsive {
+    text-align: center;
+  }
+  
+  .video-responsive iframe {
+  width: 100%;
+  height: 600px;
+  }
+  
+  /* COSE DA FARE */
+  
+  .wp-block-post .wp-block-columns {
+    margin: 6rem auto !important;
+    width: 70% !important;
+    background-color: #d2abab55 !important;
+    padding: 2rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-content: center !important;
+    border-radius: 2rem !important;
+    box-shadow: #8F434355 0 5px 10px 0
+  }
+  
+  .wp-block-post .wp-block-columns:hover {
+    cursor: pointer !important;
+  }
+  
+  .wp-block-post .wp-block-columns .wp-block-column {
+    align-items: center !important;
+  }
+  
+  .wp-block-post .wp-block-columns figure img {
+    border-radius: 2rem !important;
+  }
+  
+  /* VISITA PARIGI */
+  div .post .card {
+    /* margin-bottom: 20px; */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+  
+    
+  }
+  
+  .post .card-body p {
+  
+    z-index: 5;
+    padding: 2px;
+  
+  
+  }
+  .post .card-body .card-text{
+    margin: 0;
+  }
+  
+  .card-text h1{
+    margin-top: 0.1em;
+    margin-bottom: 0;
+  }
+  .post .card-body figure img{
+    position: relative;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0) ));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    border-radius: 10px;
+  }
+  
+  /*FORMHOME*/
+  
+  .wpforms-confirmation-container-full {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid #ccc !important;
+    padding: 20px !important;
+    border-radius: 0.5rem !important;
+  }
+  
+  .wpforms-container {
+    width: 100% !important;
+    padding: 2rem !important;
+    border-radius: 2rem !important;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1) !important;
+    position: relative !important;
+    overflow: hidden;
+    z-index: 1 !important;
+    background-color: transparent !important;
+    margin-bottom: 6rem !important;
+  }
+  
+  .wpforms-container::before {
+    content: "";
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    background-color: #bd8b8b;
+    opacity: 1 !important;
+    backdrop-filter: blur(20px) !important;
+    z-index: -2 !important;
+    border-radius: 2rem !important;
+  }
+  
+  .wpforms-container::after {
+    content: "";
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+    background-image: url('https://images.unsplash.com/photo-1504548840739-580b10ae7715?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    z-index: -1 !important;
+    border-radius: 2rem !important;
+    opacity: 0.1 !important;
+  }
+  
+  
+  .wpforms-field-container .wpforms-field-label, .wpforms-field-container label {
+    color: white !important;
+  }
+  
+  .wpforms-field-medium {
+    border: none !important;
+    border-radius: 0.5rem !important;
+  }
+  
+  .wpforms-submit {
+    background-color: #0e1d3070 !important;
+    border-radius: 3rem !important;
+    backdrop-filter: blur(5px) !important;
+    border: none !important;
+    color: white;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  
+  .wpforms-submit:hover {
+    background-color: #ffd1d160 !important;
+    background-image: none !important;
+  }
+  
+  /* Stilizzazione generale dei commenti */
+  .wp-block-comments {
+    margin-top: 1rem !important;
+    color: #1F3F67 !important;
+    background-color: #1F3F6730 !important;
+    padding: 2rem !important;
+    border-radius: 2rem;
+    border: solid 1px #1F3F67;
+  }
+  
+  .wp-block-comments a {
+    text-decoration: none !important;
+    color: #904545 !important;
+  }
+  
+  /* Stilizzazione delle card di Bootstrap per i commenti */
+  .comment .wp-block-columns {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    margin-bottom: 0.5rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    padding: 1rem !important;
+    border-radius: 2rem !important;
+  }
+  
+  /* Stilizzazione del nome dell'autore del commento */
+  .wp-block-comment-author-name {
+    font-weight: bold !important;
+  }
+  
+  /* Stilizzazione del testo del commento */
+  .wp-block-comment-content {
+    margin-top: 10px !important;
+  }
+  
+  /* Stilizzazione della data del commento */
+  .wp-block-comment-date {
+    color: #888 !important;
+    font-size: 0.9em !important;
+  }
+  
+  /* Stilizzazione del form di risposta ai commenti */
+  .wp-block-post-comments-form {
+    margin-top: 30px !important;
+  }
+  
+  /* Stilizzazione del titolo "Leave a Reply" */
+  .comment-reply-title {
+    font-size: 1.5em !important;
+    margin-bottom: 20px !important;
+  }
+  
+  /* Stilizzazione del campo di commento nel form */
+  .comment-form-comment {
+    margin-bottom: 20px !important;
+  }
+  
+  .comment-form-comment label {
+    color: #0e1d30 !important;
+  }
+  
+  /* Stilizzazione del pulsante "Post Comment" */
+  .comment-form .submit {
+    background-color: #0e1d3070;
+    opacity: 100%;
+    border-radius: 3rem;
+    backdrop-filter: blur(5px);
+    border: none;
+    padding: 1rem 4rem !important;
+  }
+  
+  .comment-form .submit:hover {
+    background-color: #ffd1d160 !important;
+    background-image: none !important;
+  }
+  
+  .wp-block-comments-title {
+    display: none !important;
+  }
+  
+  /*Articoli destinazioni*/
+  .viaggiPassati {
+    width: 60% !important;
+    margin: auto !important;
+  }
+  
+  .container .has-text-align-center {
+    text-align: center !important;
+    margin-top: 2rem !important;
+  }
+  
+  p strong {
+    color: #8F4343 !important;
+  }
+  
+  .viaggiPassati .wp-block-media-text .wp-block-media-text__media {
+    border-radius: 1rem !important;
+  }
+  
+  /*Visita Parigi*/
+  .post {
+    border: none !important;
+    background-color: transparent !important;
+  }
+  
+  .card-body {
+    width: 60% !important;
+    margin: auto !important;
+  }
+  
+  .card-body h1 {
+    margin-bottom: 2rem !important;
+    padding: 1rem !important;
+    border-bottom: solid 1px #1F3F67 !important;
+  }
+  
+  /*media query scritta bannaer Parigi*/
+  
+  @media screen and (min-width: 700px) {
+    .hero-content {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 699px) {
+    .hero-content {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    .home .wp-block-group {
+      flex-direction: column !important;
+    text-align: center !important;
+    }
+  }
+  
+  @media screen and (min-width: 879px) {
+    .home .wp-block-group .wpforms-container {
+      min-width: 50% !important;
+    }
+  }
+  
+  @media screen and (min-width: 879px) {
+    .home .wp-block-group .has-white-color {
+      min-width: 50% !important;
+      min-height: 100% !important;
+    }
+  }
+  
+  /*menu color*/
+  
+  .navbar-toggler {
+    background: #FFFFFF50 !important;
+  }
+  
